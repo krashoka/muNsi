@@ -1,0 +1,403 @@
+<!doctype html>
+<html>
+	<head>
+		<title>registration_1</title>
+		<link rel="stylesheet" href="css/bootstrap.css"/>
+		<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	</head>
+	<body style="background-color: #ffffff">
+
+<!-- nav bar -->
+
+<nav class="navbar navbar-expand-md navbar-inverse navbar-fixed-top flex-column flex-md-row bd-navbar" style="background-color: #100e0e;position: sticky">
+     <div class="container" >
+     
+     <a style="font-family: cursive;color: #338033;font-size: 23px;filter: brightness(1.5)" href="index.html" class ="navbar-brand">muNsi_</a>
+    </div>
+</nav>
+
+<!-- first pg content box -->
+
+
+	<form style="color:#000;" action="control/register_details.php" method="post">
+		<div id="first">
+			<div class=" text-center">
+				<h2 style="font-family: cursive;">Welcome to AccountingTool.<br>
+					Let's Help You Set Up</h2><br>
+					<p style="font-family: sans-serif; font-size: 18px;text-transform: lowercase; color: #303030">Having your info in Accounting Tool will make<br>
+						sending beautiful invoices to your clients a
+					  breeze.</p><br>
+			  
+		  	
+		  	<div class="row">
+			  	<div class="col-sm-4 "></div>
+			  	<div class="col-sm-4" style="border: 0px solid #bbb;padding: 20px; 
+			  	border-radius: 10px; background-image: linear-gradient(#f5f5f5,#f8f8f8,#ffffff);box-shadow: 0px 8px 23px 0px rgb(0,0,0,0.4)">
+			  		
+			  			<br>
+			  			<input class="form-control" type="text" id="fname" name="fname" placeholder="First Name" style="color:#000; border-radius: 5px; border:none;border-bottom: .9px solid #bbb"><br>
+			  			<input class="form-control" type="text"  id="lname"  name="lname" placeholder="Last Name"  style="color:#000;border-radius: 5px;border:none;border-bottom: .9px solid #bbb"><br>
+			  			<input class="form-control" type="text"  id="company" name="company" placeholder="Company Name" style=" color: #000; border-radius: 5px;border:none;border-bottom: .9px solid #bbb; "><br>
+			  			<hr style="color: #bbb;border-top: .8px solid #bbb"><br>
+			  			<input class="form-control" type="number" id="pnumber" name="pnumber" placeholder="Phone Number" style="color:#000;border-radius: 5px;border:none;border-bottom: .9px solid #bbb"><br>
+			  			<input class="form-control" type="text" id="street"  name="street" placeholder="Street" style="color:#000;border-radius: 5px;border:none;border-bottom: .9px solid #bbb"><br>
+			  			<input class="form-control" type="text" id="city" name="city" placeholder="City" style="color:#000;border-radius: 5px;border:none;border-bottom: .9px solid #bbb"><br>
+			  			<input class="form-control" type="text" id="state" name="state" placeholder="State" style="color:#000;border-radius: 5px;border:none;border-bottom: .9px solid #bbb"><br>
+			  			<input class="form-control" type="number" id="ZIPC"  name="ZIPC" placeholder="ZIP Code" style="color:#000;border-radius: 5px;border:none;border-bottom: .9px solid #bbb"><br><BR>
+
+			  	</div>
+				<div class="col-sm-4"></div>  
+			</div>
+              	<div class="row text-center">
+			  		<div class="col-sm-12" style="height: 2px;">
+			               	<br>
+			               <span class="btn btn-success" name="firstClick" id="firstClick" style="
+			               width: 150px;font-size: 15px;margin-bottom: 20px">Save and Continue</span><br><br>
+			  		</div>
+		  		</div>
+		  </div>
+		</div>
+		
+<!-- second page content   -->
+
+<div style="display:none" id="second">
+	<div class="text-center">
+ <h2 style="font-family: cursive;">Choose Your Industry</h2>
+  <br>
+   <p style="font-family: sans-serif; font-size: 18px;text-transform: lowercase; color: #303030">
+   	Help us get to know your business so we can
+   	customize your <br>experience and make you feel
+   	   right at home.
+   </p>
+</h6><br>
+
+<div class="container" style="border: 0px solid #bbb; padding: 20px 10px ; border-radius: 10px; background-image: linear-gradient(#f5f5f5,#f8f8f8,#ffffff);box-shadow: 0px 8px 23px 0px rgb(0,0,0,0.4)">
+	   <div class="row" style="text-align: left;">
+	   		<div class="col-sm-3 "></div>
+	        <div class="col-sm-3 ">
+	        	<div class="card" >
+	        		<div class="card-body">
+	        		       <img class="img-responsive " src="view/images/paint-brush.jpg" alt="card image">
+	        		       <div style="padding-top: 10px;color: #404040;font-size: 18px">
+	        		       		<input type="checkbox" name="compType[]" value="Creatives & marketing"> <span>Creatives & marketing</span>
+	        		       </div>
+		        	</div>
+		        </div>
+	    	</div>
+	        <div class="col-sm-3 ">
+	        	<div class="card">
+	        		<div class="card-body" style="float: right;">
+	        		       <img class="img-responsive" src="view/images/hammer.jpg" alt="card image" >
+	        		       <div style="padding-top: 10px;color: #404040;font-size: 18px">
+	        		       		<input type="checkbox" name="compType[]" value="Legal Services & Consulting"> <span>Legal Services & Consulting</span>
+	        		       </div>
+	        	    </div>
+	            </div>
+	        </div>
+	        <div class="col-sm-3 "></div>
+        </div>	
+          <br><br>
+        <div class="row" style="text-align: left;">
+        	<div class="col-sm-3 "></div>
+	        <div class="col-sm-3 ">
+	        	<div class="card">
+	        		<div class="card-body">
+	        		       <img class="img-responsive " src="view/images/hammer_pink.jpg" alt="card image">
+	        		       <div style="padding-top: 10px;color: #404040;font-size: 18px">
+	        		       		<input type="checkbox" name="compType[]" value="Trades & Home Services"> <span>Trades & Home Services</span>
+	        		       </div>
+	        		</div>
+	       		</div>
+	    	</div>
+	        <div class="col-sm-3 ">
+	        	<div class="card">
+	        		<div class="card-body" style="float: right;">
+	        		       <img class="img-responsive" src="view/images/development&IT.jpg" alt="card image" >
+							<div style="padding-top: 10px;color: #404040;font-size: 18px">
+	        		       		<input type="checkbox" name="compType[]" value="Development & IT"> <span>Development & IT</span>
+	        		       </div>	        	    
+	        		</div>
+	            </div>
+	        </div>
+	        <div class="col-sm-3 "></div>
+        </div>
+        <br><br>	
+              <p><a onclick="diffIndus()" style="cursor: pointer; font-size: 17px">I'm in a different industry</a></p>
+</div>
+
+
+              <br><br>
+               <span style="margin-left: 20px; font-size: 15px;box-shadow: 0px 1px 7px 0px rgb(0,0,0,0.4)" id="secondGo" name=" Go Back" class="btn btn-warning">Go Back</span>
+
+               <span style="font-size: 15px;box-shadow: 0px 1px 7px 0px rgb(0,0,0,0.4)" class="btn btn-success" name="secondClick" id="secondClick">Save and Continue</span>
+              <br><br><br>
+     </div>
+</div>
+
+
+<!--second  page part 2 content -->
+
+<div style="display:none" id="third">
+	<div class="text-center"> 
+		<h2 style="font-family: cursive;">Select What You Do for Your
+		 clients</h2><br>
+		 <p style="font-family: sans-serif; font-size: 18px;text-transform: lowercase; color: #303030">We'll add the services you select to your account <br>
+		   so you can easily invoice for your work. </p>
+        <br>
+
+
+<div class="container" style="border: 0px solid #bbb; padding: 20px 10px ; border-radius: 10px; background-image: linear-gradient(#f5f5f5,#ffffff);box-shadow: 0px 8px 23px 0px rgb(0,0,0,0.4)">		
+		<div class="row" style="text-align: left;">
+	   		<div class="col-sm-3 "></div>
+	        <div class="col-sm-3 ">
+	        	<div class="card">
+	        		<div class="card-body">
+	        		       <img class="img-responsive " src="view/images/website-development.jpg" alt="card image">
+	        		       <div style="padding-top: 10px;color: #404040;font-family: cursive;font-size: 18px">
+	        		       		<input type="checkbox" name="compType[]" value="Web Devlopment"> <span>Web Devlopment</span>
+	        		       </div>
+		        	</div>
+		        </div>
+	    	</div>
+	        <div class="col-sm-3 ">
+	        	<div class="card">
+	        		<div class="card-body" style="float: right;">
+	        		       <img class="img-responsive" src="view/images/software-engineering.jpg" alt="card image" >
+	        		       <div style="padding-top: 10px;color: #404040;font-family: cursive;font-size: 18px">
+	        		       		<input type="checkbox" name="compType[]" value="Software Engineering"> <span>Software Engineering</span>
+	        		       </div>
+	        	    </div>
+	            </div>
+	        </div>
+	        <div class="col-sm-3 "></div>
+        </div>
+        <br><br>
+	
+
+		<div class="row" style="text-align: left;">
+	   		<div class="col-sm-3 "></div>
+	        <div class="col-sm-3 ">
+	        	<div class="card">
+	        		<div class="card-body">
+	        		       <img class="img-responsive " src="view/images/app-development.png." alt="card image">
+	        		       <div style="padding-top: 10px;color: #404040;font-family: cursive;font-size: 18px">
+	        		       		<input type="checkbox" name="compType[]" value="App Development"> <span>App Development</span>
+	        		       </div>
+		        	</div>
+		        </div>
+	    	</div>
+	        <div class="col-sm-3 ">
+	        	<div class="card">
+	        		<div class="card-body" style="float: right;">
+	        		       <img class="img-responsive" src="view/images/app-design.jpg" alt="card image" >
+	        		       <div style="padding-top: 10px;color: #404040;font-family: cursive;font-size: 18px">
+	        		       		<input type="checkbox" name="compType[]" value="App Design"> <span>App Design</span>
+	        		       </div>
+	        	    </div>
+	            </div>
+	        </div>
+	        <div class="col-sm-3 "></div>
+        </div>
+        <br><br>
+        <div class="row" style="text-align: left;">
+	   		<div class="col-sm-3 "></div>
+	        <div class="col-sm-3 ">
+	        	<div class="card">
+	        		<div class="card-body">
+	        		       <img class="img-responsive " src="view/images/Technical-Support.png" alt="card image">
+	        		       <div style="padding-top: 10px;color: #404040;font-family: cursive;font-size: 18px">
+	        		       		<input type="checkbox" name="compType[]" value="Technical Support"> <span>Technical Support</span>
+	        		       </div>
+		        	</div>
+		        </div>
+	    	</div>
+	        <div class="col-sm-3 ">
+	        	<div class="card">
+	        		<div class="card-body" style="float: right;">
+	        		       <img class="img-responsive" src="view/images/computer-sales.jpg" alt="card image" >
+	        		       <div style="padding-top: 10px;color: #404040;font-family: cursive;font-size: 18px">
+	        		       		<input type="checkbox" name="compType[]" value="Computer Sales"> <span>Computer Sales</span>
+	        		       </div>
+	        	    </div>
+	            </div>
+	        </div>
+	        <div class="col-sm-3 "></div>
+        </div>
+        <br><br>
+
+        <div class="row" style="text-align: left;">
+	   		<div class="col-sm-3 "></div>
+	        <div class="col-sm-3 ">
+	        	<div class="card">
+	        		<div class="card-body">
+	        		       <img class="img-responsive " src="view/images/customer-support.jpg" alt="card image">
+	        		       <div style="padding-top: 10px;color: #404040;font-family: cursive;font-size: 18px">
+	        		       		<input type="checkbox" name="compType[]" value="Customer Support"> <span>Customer Support</span>
+	        		       </div>
+		        	</div>
+		        </div>
+	    	</div>
+	        <div class="col-sm-3 ">
+	        	<div class="card">
+	        		<div class="card-body" style="float: right;">
+	        		       <img class="img-responsive" src="view/images/game-development.png" alt="card image" >
+	        		       <div style="padding-top: 10px;color: #404040;font-family: cursive;font-size: 18px">
+	        		       		<input type="checkbox" name="compType[]" value="Game Devlopment"> <span>Game Devlopment</span>
+	        		       </div>
+	        	    </div>
+	            </div>
+	        </div>
+	        <div class="col-sm-3 "></div>
+        </div>
+        <br><br>
+        <div class="row" style="text-align: left;">
+	   		<div class="col-sm-3 "></div>
+	        <div class="col-sm-3 ">
+	        	<div class="card">
+	        		<div class="card-body">
+	        		       <img class="img-responsive " src="view/images/computer-hardware.jpg" alt="card image">
+	        		       <div style="padding-top: 10px;color: #404040;font-family: cursive;font-size: 18px">
+	        		       		<input type="checkbox" name="compType[]" value="Computer Hardware"> <span>Computer Hardware</span>
+	        		       </div>
+		        	</div>
+		        </div>
+	    	</div>
+	        <div class="col-sm-3 ">
+	        	<div class="card">
+	        		<div class="card-body" style="float: right;">
+	        		       <img class="img-responsive" src="view/images/Information-security.jpg" alt="card image" >
+	        		       <div style="padding-top: 10px;color: #404040;font-family: cursive;font-size: 18px">
+	        		       		<input type="checkbox" name="compType[]" value="Information Security"> <span>Information Security</span>
+	        		       </div>
+	        	    </div>
+	            </div>
+	        </div>
+	        <div class="col-sm-3 "></div>
+        </div>
+
+        <br><br>	
+              <p><a onclick="category()" style="cursor: pointer;font-size: 17px">Previous</a></p>
+</div>
+              
+              <br><br>
+              <span class="btn btn-success" name="thi" id="thirdClick" style="font-size: 15px;box-shadow: 0px 1px 7px 0px rgb(0,0,0,0.4)">Save and Continue</span><br><br><br>
+    </div>
+		  		
+	</div>
+
+<!--  third page content-->
+
+		  	<div style="display:none" id="fourth">
+		  		<div class="row">
+		            <div class="col-md-4"></div>
+
+		            <div class="col-md-4">
+		             	<div class=" text-center">
+			             	<h3 style="font-family: cursive;">Select What You Do for Your<br>
+			             	  	client</h3>
+			                <br>
+			                <p style="font-family: sans-serif; font-size: 18px;text-transform: lowercase; color: #303030">We'll add these to your account so you can<br>
+			                 easily invoice for your services.</p>
+			                 <br><br>
+		                 
+	                    	<div class="row">
+	                      		<div class="col-sm-12" style="border: 0px solid #bbb; padding: 20px 10px ; border-radius: 10px; background-image: linear-gradient(#f5f5f5,#ffffff);box-shadow: 0px 8px 23px 0px rgb(0,0,0,0.4)">
+			                        <input type="text" name="service[]" placeholder="Add a Service" class="form-control" style="min-width: 300px; float:right; border-radius: 70px">
+			                        <div id="new_chq"></div>
+			                        <input type="hidden" name="service[]" placeholder="Add a Service" value="1" class="form-control" id="total_chq" style="min-width: 300px; float:right; border-radius: 70px"><br><br>
+	                      		</div>
+	                  		</div>
+		                  	<br>
+		                  	<div class="row"> 
+			                    <div class="col-sm-12">
+			                          <button type="button" id="add" class="btn" style="font-size: 20px; font-weight: 600; background-color: #707070; color:#fff;box-shadow: 0px 4px 15px 0px rgb(0,0,0,0.3);">+</button>&ensp;&ensp;
+			                          <button type="button" id="remove" class="btn " style="font-size: 20px; font-weight: 600;background-color: #707070; color:#fff;box-shadow: 0px 4px 15px 0px rgb(0,0,0,0.4)">-</button>
+			                    </div>
+			                </div><br><br>
+			                <div class="row">
+			                    <div class="col-sm-12">
+			                    	
+  									<span id="fourthGo" class="btn btn-warning" style="font-size: 15px;box-shadow: 0px 1px 7px 0px rgb(0,0,0,0.4)">Go Back</span>
+  									<input type="submit" class="btn btn-success" value="Submit" name="submit" id="fourthClick" style="font-size: 15px;box-shadow: 0px 1px 7px 0px rgb(0,0,0,0.4)" />
+  								</div>
+		                  	</div>   
+		              	</div>
+		            </div>
+		            
+	              	<div class="col-md-4"></div>
+				</div>
+			</div>
+
+
+		  	</form>
+	
+		</body>
+
+		
+</html>
+
+
+<!-- scripting coding -->
+
+<script type="text/javascript">
+			$('#firstClick').click(function() {    
+                     $('#first').hide();
+					$('#second').show();  
+            });
+			$('#secondClick').click(function(){
+				$('#second').hide();
+				$('#fourth').show();
+			});
+			$('#thirdClick').click(function(){
+				$('#third').hide();
+				$('#fourth').show();
+			});
+
+			function diffIndus(){
+				$('#second').hide();
+				$('#third').show();
+			}
+
+			function category(){
+				$('#third').hide();
+				$('#second').show();	
+			}
+
+			$('#secondGo').click(function(){
+				$('#second').hide();
+				$('#first').show();
+			});
+			$('#fourthGo').click(function(){
+				$('#fourth').hide();
+				$('#second').show();
+			});
+		</script>
+
+		<script type="text/javascript">
+			$('#add').on('click', add);
+			$('#remove').on('click', remove);
+
+			function add() {
+			  var new_chq_no = parseInt($('#total_chq').val()) + 1;
+			  var new_input = '<input type="text" name="service[]" placeholder="Add a Service" class="form-control"style="min-width: 300px; margin-top:10px; float:right; border-radius: 70px" id="new_' + new_chq_no + '">';
+
+			  $('#new_chq').append(new_input);
+
+			  $('#total_chq').val(new_chq_no);
+			}
+
+			function remove() {
+			  var last_chq_no = $('#total_chq').val();
+
+			  if (last_chq_no > 1) {
+			    $('#new_' + last_chq_no).remove();
+			    $('#total_chq').val(last_chq_no - 1);
+			  }
+			}
+		</script> 
